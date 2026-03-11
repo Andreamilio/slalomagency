@@ -10,10 +10,10 @@ const TtIcon = () => (
 )
 
 const talents = [
-  { name: 'Marco Rossi', handle: '@marcorossi', initials: 'MR', ig: '2.4M', tt: '1.1M', bg: 'linear-gradient(145deg,#2a0830,#833AB4)', mt: 0, ar: '3/4.2' },
-  { name: 'Sofia Conti', handle: '@sofiaconti', initials: 'SC', ig: '1.8M', tt: '3.2M', bg: 'linear-gradient(145deg,#1a0520,#E1306C)', mt: 44, ar: '3/4' },
-  { name: 'Luca Ferrari', handle: '@lucaferrari', initials: 'LF', ig: '900K', tt: '2.1M', bg: 'linear-gradient(145deg,#081a1a,#25F4EE)', mt: -20, ar: '3/4.4' },
-  { name: 'Anna Vitale', handle: '@annavitale', initials: 'AV', ig: '3.1M', tt: '4.8M', bg: 'linear-gradient(145deg,#1a0510,#FE2C55)', mt: 22, ar: '3/4' },
+  { name: 'Frankie', handle: '@frankie', img: '/roster/frankie.avif', ig: '2.4M', tt: '1.1M', mt: 0, ar: '3/4.2' },
+  { name: 'Sofi', handle: '@sofi', img: '/roster/sofi.avif', ig: '1.8M', tt: '3.2M', mt: 44, ar: '3/4' },
+  { name: 'Gionny', handle: '@gionny', img: '/roster/gionny.avif', ig: '900K', tt: '2.1M', mt: -20, ar: '3/4.4' },
+  { name: 'Giulia', handle: '@giulia', img: '/roster/giulia.avif', ig: '3.1M', tt: '4.8M', mt: 22, ar: '3/4' },
 ]
 
 export default function Roster() {
@@ -41,11 +41,13 @@ export default function Roster() {
           </a>
         </div>
 
+        <p className="roster-scroll-hint" aria-hidden>
+          Scorri per vedere tutti &rarr;
+        </p>
         <div className="reveal roster-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, alignItems: 'start', position: 'relative', zIndex: 1 }}>
           {talents.map((t) => (
             <div key={t.handle} className="r-card roster-card" style={{ aspectRatio: t.ar, marginTop: t.mt }}>
-              <div className="r-bg" style={{ background: t.bg }} />
-              <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-60%)', fontWeight: 900, fontSize: 64, color: 'rgba(255,255,255,.07)', letterSpacing: '-.05em', zIndex: 1, userSelect: 'none' }}>{t.initials}</div>
+              <img src={t.img} alt={t.name} className="r-bg" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
               <div style={{ position: 'absolute', inset: 0, zIndex: 2, background: 'linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(8,8,16,.45) 55%, rgba(8,8,16,.90) 80%, rgba(8,8,16,.97) 100%)' }} />
               <div className="r-blur" />
               <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: 18, zIndex: 4 }}>

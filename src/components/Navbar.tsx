@@ -97,7 +97,7 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li>
+          <li style={{ marginLeft: 10 }}>
             <Link
               href="#"
               className="nav-cta"

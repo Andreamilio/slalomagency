@@ -16,7 +16,7 @@ export default function Hero() {
       const target = Number(el.dataset.value || 0)
       const suffix = el.dataset.suffix || ''
       const valueNode = el.querySelector('.stat-value') || el
-      const duration = 1800
+      const duration = 3200
       const start = performance.now()
 
       function tick(now: number) {
@@ -73,14 +73,28 @@ export default function Hero() {
       <div className="blob-b" style={{ position:'absolute', width:500, height:500, borderRadius:'50%', filter:'blur(120px)', background:'radial-gradient(circle, rgba(37,244,238,.1) 0%, transparent 70%)', top:'30%', right:-100, pointerEvents:'none', zIndex:0 }} />
       <div className="blob-c" style={{ position:'absolute', width:400, height:400, borderRadius:'50%', filter:'blur(120px)', background:'radial-gradient(circle, rgba(131,58,180,.08) 0%, transparent 70%)', bottom:60, left:'30%', pointerEvents:'none', zIndex:0 }} />
 
-      <div className="animate-up-1" style={{ position:'relative', zIndex:2, display:'inline-flex', alignItems:'center', gap:8, background:'rgba(225,48,108,.07)', border:'1px solid rgba(225,48,108,.18)', borderRadius:100, padding:'6px 16px', fontSize:11.5, fontWeight:600, color:'var(--ig-pink)', letterSpacing:'.09em', textTransform:'uppercase', marginBottom:28 }}>
+      <div className="animate-up-1" style={{ position:'relative', zIndex:2, display:'inline-flex', alignItems:'center', gap:8, background:'rgba(225,48,108,.07)', border:'1px solid rgba(225,48,108,.18)', borderRadius:100, padding:'6px 16px', fontSize:11.5, fontWeight:600, color:'var(--ig-pink)', letterSpacing:'.09em', textTransform:'uppercase', marginBottom:36 }}>
         <span className="eyebrow-dot" style={{ width:6, height:6, background:'var(--ig-pink)', borderRadius:'50%', display:'inline-block' }} />
         Talent &amp; Creative Agency
       </div>
 
-      <h1 className="animate-up-2" style={{ position:'relative', zIndex:2, fontFamily:'Figtree, sans-serif', fontWeight:900, fontSize:'clamp(56px, 9vw, 110px)', lineHeight:.93, letterSpacing:'-.04em', marginBottom:18, color:'var(--dark-text)' }}>
+      <h1 className="animate-up-2 hero-title" style={{ position:'relative', zIndex:2, fontFamily:'Figtree, sans-serif', fontWeight:900, fontSize:'clamp(72px, 11vw, 130px)', lineHeight:.93, letterSpacing:'-.04em', marginBottom:28, color:'var(--dark-text)' }}>
         <span className="hero-title-l1">Find your</span>
-        <span className="hero-title-l2">WAY</span>
+        <span className="hero-title-l2 hero-way-wrap" style={{ display:'inline-block', fontFamily:'Figtree, sans-serif', fontWeight:900, fontSize:'1.34em', lineHeight:.8 }}>
+          <svg className="hero-way-svg" viewBox="0 0 280 90" style={{ display:'block', width:'2.6em', height:'0.9em', verticalAlign:'top' }} aria-hidden>
+            <defs>
+              <linearGradient id="wayGrad" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="translate(0, 0)">
+                <stop offset="0%" stopColor="#833AB4" />
+                <stop offset="25%" stopColor="#E1306C" />
+                <stop offset="55%" stopColor="#F77737" />
+                <stop offset="80%" stopColor="#FCAF45" />
+                <stop offset="100%" stopColor="#25F4EE" />
+                <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="-300 0" dur="3.2s" repeatCount="indefinite" />
+              </linearGradient>
+            </defs>
+            <text x="140" y="72" textAnchor="middle" className="hero-way-text" style={{ fontFamily:'Figtree, sans-serif', fontWeight:900, fontSize:72, letterSpacing:'-.04em', textTransform:'uppercase' }}>WAY</text>
+          </svg>
+        </span>
       </h1>
 
       <div className="animate-up-4 hero-ctas" style={{ position:'relative', zIndex:2, display:'flex', gap:14, alignItems:'center' }}>
@@ -92,7 +106,7 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className="animate-up-5 hero-stats" style={{ position:'relative', zIndex:2, display:'flex', gap:64, marginTop:52 }}>
+      <div className="animate-up-5 hero-stats" style={{ position:'relative', zIndex:2, display:'flex', gap:64, marginTop:68 }}>
         <div>
           <div className="stat-n" data-value="120" data-suffix="+"><span className="stat-value">0</span></div>
           <div style={{ fontSize:11, color:'rgba(26,26,46,.4)', letterSpacing:'.07em', textTransform:'uppercase', marginTop:4 }}>Talenti</div>
