@@ -12,10 +12,10 @@ const TtIcon = () => (
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 const talents = [
-  { name: 'Frankie', handle: '@frankie', img: `${BASE}/roster/frankie.avif`, ig: '2.4M', tt: '1.1M', mt: 0, ar: '3/4.2' },
-  { name: 'Sofi', handle: '@sofi', img: `${BASE}/roster/sofi.avif`, ig: '1.8M', tt: '3.2M', mt: 44, ar: '3/4' },
-  { name: 'Gionny', handle: '@gionny', img: `${BASE}/roster/gionny.avif`, ig: '900K', tt: '2.1M', mt: -20, ar: '3/4.4' },
-  { name: 'Giulia', handle: '@giulia', img: `${BASE}/roster/giulia.avif`, ig: '3.1M', tt: '4.8M', mt: 22, ar: '3/4' },
+  { name: 'Frankie', handle: '@frankie', img: `${BASE}/roster/frankie.avif`, ig: '2.4M', tt: '1.1M', igUrl: 'https://instagram.com/frankie', ttUrl: 'https://tiktok.com/@frankie', mt: 0, ar: '3/4.2' },
+  { name: 'Sofi', handle: '@sofi', img: `${BASE}/roster/sofi.avif`, ig: '1.8M', tt: '3.2M', igUrl: 'https://instagram.com/sofi', ttUrl: 'https://tiktok.com/@sofi', mt: 44, ar: '3/4' },
+  { name: 'Gionny', handle: '@gionny', img: `${BASE}/roster/gionny.avif`, ig: '900K', tt: '2.1M', igUrl: 'https://instagram.com/gionny', ttUrl: 'https://tiktok.com/@gionny', mt: -20, ar: '3/4.4' },
+  { name: 'Giulia', handle: '@giulia', img: `${BASE}/roster/giulia.avif`, ig: '3.1M', tt: '4.8M', igUrl: 'https://instagram.com/giulia', ttUrl: 'https://tiktok.com/@giulia', mt: 22, ar: '3/4' },
 ]
 
 export default function Roster() {
@@ -50,18 +50,18 @@ export default function Roster() {
           {talents.map((t) => (
             <div key={t.handle} className="r-card roster-card" style={{ aspectRatio: t.ar, marginTop: t.mt }}>
               <img src={t.img} alt={t.name} className="r-bg" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
-              <div style={{ position: 'absolute', inset: 0, zIndex: 2, background: 'linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(8,8,16,.45) 55%, rgba(8,8,16,.90) 80%, rgba(8,8,16,.97) 100%)' }} />
+              <div style={{ position: 'absolute', inset: 0, zIndex: 2, background: 'linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(8,8,16,.45) 55%, rgba(8,8,16,.90) 80%, rgba(8,8,16,.97) 100%)', pointerEvents: 'none' }} />
               <div className="r-blur" />
               <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: 18, zIndex: 4 }}>
                 <div style={{ fontFamily: 'Figtree, sans-serif', fontWeight: 800, fontSize: 15, letterSpacing: '-.01em', marginBottom: 3 }}>{t.name}</div>
                 <div style={{ fontSize: 12, color: 'rgba(240,240,248,.6)', fontWeight: 400 }}>{t.handle}</div>
-                <div style={{ display: 'flex', gap: 6, marginTop: 10, flexWrap: 'wrap' }}>
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 10, fontWeight: 800, letterSpacing: '.04em', color: '#fff', padding: '4px 10px', borderRadius: 8, background: 'linear-gradient(135deg, var(--ig-purple), var(--ig-pink), var(--ig-orange))' }}>
+                <div style={{ display: 'flex', gap: 6, marginTop: 10, flexWrap: 'wrap', position: 'relative', zIndex: 5 }}>
+                  <a href={t.igUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 10, fontWeight: 800, letterSpacing: '.04em', color: '#fff', padding: '4px 10px', borderRadius: 8, background: 'linear-gradient(135deg, var(--ig-purple), var(--ig-pink), var(--ig-orange))', textDecoration: 'none', cursor: 'pointer' }}>
                     <IgIcon />{t.ig}
-                  </span>
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 10, fontWeight: 800, letterSpacing: '.04em', color: '#fff', padding: '4px 10px', borderRadius: 8, background: 'var(--dark-text)' }}>
+                  </a>
+                  <a href={t.ttUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 10, fontWeight: 800, letterSpacing: '.04em', color: '#fff', padding: '4px 10px', borderRadius: 8, background: 'var(--dark-text)', textDecoration: 'none', cursor: 'pointer' }}>
                     <TtIcon />{t.tt}
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>
