@@ -1,7 +1,9 @@
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const partners = [
-  { name: 'RDS Next', logo: '/partners/rdsnext.avif' },
-  { name: '3SY', logo: '/partners/3sy.avif' },
-  { name: 'Studio Legale Oliveri', logo: '/partners/sergio.avif' },
+  { name: 'RDS Next', logo: `${BASE}/partners/rdsnext.avif` },
+  { name: '3SY', logo: `${BASE}/partners/3sy.avif` },
+  { name: 'Studio Legale Oliveri', logo: `${BASE}/partners/sergio.avif` },
 ]
 
 export default function Partners() {

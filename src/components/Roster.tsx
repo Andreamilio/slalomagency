@@ -9,11 +9,13 @@ const TtIcon = () => (
   </svg>
 )
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const talents = [
-  { name: 'Frankie', handle: '@frankie', img: '/roster/frankie.avif', ig: '2.4M', tt: '1.1M', mt: 0, ar: '3/4.2' },
-  { name: 'Sofi', handle: '@sofi', img: '/roster/sofi.avif', ig: '1.8M', tt: '3.2M', mt: 44, ar: '3/4' },
-  { name: 'Gionny', handle: '@gionny', img: '/roster/gionny.avif', ig: '900K', tt: '2.1M', mt: -20, ar: '3/4.4' },
-  { name: 'Giulia', handle: '@giulia', img: '/roster/giulia.avif', ig: '3.1M', tt: '4.8M', mt: 22, ar: '3/4' },
+  { name: 'Frankie', handle: '@frankie', img: `${BASE}/roster/frankie.avif`, ig: '2.4M', tt: '1.1M', mt: 0, ar: '3/4.2' },
+  { name: 'Sofi', handle: '@sofi', img: `${BASE}/roster/sofi.avif`, ig: '1.8M', tt: '3.2M', mt: 44, ar: '3/4' },
+  { name: 'Gionny', handle: '@gionny', img: `${BASE}/roster/gionny.avif`, ig: '900K', tt: '2.1M', mt: -20, ar: '3/4.4' },
+  { name: 'Giulia', handle: '@giulia', img: `${BASE}/roster/giulia.avif`, ig: '3.1M', tt: '4.8M', mt: 22, ar: '3/4' },
 ]
 
 export default function Roster() {

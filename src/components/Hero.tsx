@@ -69,9 +69,9 @@ export default function Hero() {
     >
       <div className="hero-aura" />
 
-      <div className="blob-a" style={{ position:'absolute', width:700, height:700, borderRadius:'50%', filter:'blur(120px)', background:'radial-gradient(circle, rgba(225,48,108,.12) 0%, transparent 70%)', top:-200, left:-150, pointerEvents:'none', zIndex:0 }} />
-      <div className="blob-b" style={{ position:'absolute', width:500, height:500, borderRadius:'50%', filter:'blur(120px)', background:'radial-gradient(circle, rgba(37,244,238,.1) 0%, transparent 70%)', top:'30%', right:-100, pointerEvents:'none', zIndex:0 }} />
-      <div className="blob-c" style={{ position:'absolute', width:400, height:400, borderRadius:'50%', filter:'blur(120px)', background:'radial-gradient(circle, rgba(131,58,180,.08) 0%, transparent 70%)', bottom:60, left:'30%', pointerEvents:'none', zIndex:0 }} />
+      <div style={{ position:'absolute', width:700, height:700, borderRadius:'50%', background:'radial-gradient(circle, rgba(225,48,108,.10) 0%, transparent 60%)', top:-200, left:-150, pointerEvents:'none', zIndex:0, willChange:'auto' }} />
+      <div style={{ position:'absolute', width:500, height:500, borderRadius:'50%', background:'radial-gradient(circle, rgba(37,244,238,.08) 0%, transparent 60%)', top:'30%', right:-100, pointerEvents:'none', zIndex:0, willChange:'auto' }} />
+      <div style={{ position:'absolute', width:400, height:400, borderRadius:'50%', background:'radial-gradient(circle, rgba(131,58,180,.07) 0%, transparent 60%)', bottom:60, left:'30%', pointerEvents:'none', zIndex:0, willChange:'auto' }} />
 
       <div className="animate-up-1" style={{ position:'relative', zIndex:2, display:'inline-flex', alignItems:'center', gap:8, background:'rgba(225,48,108,.07)', border:'1px solid rgba(225,48,108,.18)', borderRadius:100, padding:'6px 16px', fontSize:11.5, fontWeight:600, color:'var(--ig-pink)', letterSpacing:'.09em', textTransform:'uppercase', marginBottom:36 }}>
         <span className="eyebrow-dot" style={{ width:6, height:6, background:'var(--ig-pink)', borderRadius:'50%', display:'inline-block' }} />
