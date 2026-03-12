@@ -83,13 +83,11 @@ export default function Hero() {
         <span className="hero-title-l2 hero-way-wrap" style={{ display:'inline-block', fontFamily:'Figtree, sans-serif', fontWeight:900, fontSize:'1.34em', lineHeight:.8 }}>
           <svg className="hero-way-svg" viewBox="0 0 280 90" style={{ display:'block', width:'2.6em', height:'0.9em', verticalAlign:'top' }} aria-hidden>
             <defs>
-              <linearGradient id="wayGrad" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="translate(0, 0)">
+              <linearGradient id="wayGrad" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="translate(0, 0)">
                 <stop offset="0%" stopColor="#833AB4" />
-                <stop offset="25%" stopColor="#E1306C" />
-                <stop offset="55%" stopColor="#F77737" />
-                <stop offset="80%" stopColor="#FCAF45" />
-                <stop offset="100%" stopColor="#25F4EE" />
-                <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="-300 0" dur="3.2s" repeatCount="indefinite" />
+                <stop offset="50%" stopColor="#E1306C" />
+                <stop offset="100%" stopColor="#F77737" />
+                <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="-200 0" dur="3.2s" repeatCount="indefinite" />
               </linearGradient>
             </defs>
             <text x="140" y="72" textAnchor="middle" className="hero-way-text" style={{ fontFamily:'Figtree, sans-serif', fontWeight:900, fontSize:72, letterSpacing:'-.04em', textTransform:'uppercase' }}>WAY</text>
@@ -98,7 +96,7 @@ export default function Hero() {
       </h1>
 
       <div className="animate-up-4 hero-ctas" style={{ position:'relative', zIndex:2, display:'flex', gap:14, alignItems:'center' }}>
-        <a href="#servizi" className="btn-p" style={{ background:'linear-gradient(135deg, var(--ig-purple), var(--ig-pink), var(--ig-orange))', color:'#fff', fontFamily:'Figtree, sans-serif', fontWeight:700, fontSize:14, padding:'14px 32px', borderRadius:100, textDecoration:'none', display:'inline-flex', alignItems:'center', gap:8, transition:'transform .2s, box-shadow .3s', backgroundSize:'200%' }}>
+        <a href="#servizi" className="btn-p" style={{ background:'linear-gradient(45deg, var(--ig-purple), var(--ig-pink), var(--ig-orange))', color:'#fff', fontFamily:'Figtree, sans-serif', fontWeight:700, fontSize:14, padding:'14px 32px', borderRadius:100, textDecoration:'none', display:'inline-flex', alignItems:'center', gap:8, transition:'transform .2s, box-shadow .3s', backgroundSize:'200% 200%' }}>
           Scopri i servizi <span className="btn-arr">&rarr;</span>
         </a>
         <a href="#roster" style={{ color:'rgba(26,26,46,.5)', fontSize:14, textDecoration:'none', display:'inline-flex', alignItems:'center', gap:6, padding:'14px 8px', transition:'color .2s' }}>
