@@ -17,13 +17,12 @@ export default function Services() {
       <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div className="reveal" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 68, flexWrap: 'wrap', gap: 24 }}>
           <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, fontSize: 11, fontWeight: 600, letterSpacing: '.15em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 16 }}>
-              <span style={{ width: 22, height: 1, background: 'var(--ig-pink)', display: 'inline-block' }} />
-              I nostri servizi
-            </div>
             <h2 style={{ fontFamily: 'Figtree, sans-serif', fontWeight: 900, fontSize: 'clamp(34px,4.5vw,58px)', letterSpacing: '-.03em', lineHeight: 1.05 }}>
-              Uno slalom tra strategia, creatività e creator.
+              Scegli la tua traiettoria
             </h2>
+            <p style={{ fontSize: 15, color: '#fff', marginTop: 12, fontWeight: 400, lineHeight: 1.5 }}>
+              Uno slalom tra strategia, creatività e creator.
+            </p>
           </div>
         </div>
 

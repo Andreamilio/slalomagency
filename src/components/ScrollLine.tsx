@@ -74,7 +74,7 @@ export default function ScrollLine() {
         <h2 style={{ fontFamily:'Figtree, sans-serif', fontWeight:900, fontSize:'clamp(34px,4.5vw,58px)', letterSpacing:'-.03em', lineHeight:1.05, maxWidth:600, margin:'0 auto' }}>
           Ogni progetto segue<br />un percorso fluido
         </h2>
-        <p style={{ color:'rgba(240,240,248,.75)', marginTop:20, fontSize:15, maxWidth:420, marginLeft:'auto', marginRight:'auto', lineHeight:1.7 }}>
+        <p style={{ color:'#fff', marginTop:20, fontSize:15, maxWidth:420, marginLeft:'auto', marginRight:'auto', lineHeight:1.7 }}>
           Dal concept alla delivery, ci muoviamo con precisione e creatività lungo curve che nessun altro osa tracciare.
         </p>
       </div>
