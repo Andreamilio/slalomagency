@@ -16,7 +16,7 @@ export default function Hero() {
       const target = Number(el.dataset.value || 0)
       const suffix = el.dataset.suffix || ''
       const valueNode = el.querySelector('.stat-value') || el
-      const duration = 3200
+      const duration = 8000
       const start = performance.now()
 
       function tick(now: number) {

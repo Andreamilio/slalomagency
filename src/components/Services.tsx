@@ -19,18 +19,15 @@ export default function Services() {
           <div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, fontSize: 11, fontWeight: 600, letterSpacing: '.15em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 16 }}>
               <span style={{ width: 22, height: 1, background: 'var(--ig-pink)', display: 'inline-block' }} />
-              Cosa facciamo
+              I nostri servizi
             </div>
             <h2 style={{ fontFamily: 'Figtree, sans-serif', fontWeight: 900, fontSize: 'clamp(34px,4.5vw,58px)', letterSpacing: '-.03em', lineHeight: 1.05 }}>
-              Servizi che<br />fanno la differenza
+              Uno slalom tra strategia, creatività e creator.
             </h2>
           </div>
-          <p style={{ color: 'var(--muted)', fontSize: 15, fontWeight: 400, maxWidth: 280, lineHeight: 1.7 }}>
-            Ogni progetto inizia da una domanda: come possiamo superare le aspettative?
-          </p>
         </div>
 
-        <div className="reveal sv-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 2 }}>
+        <div className="reveal sv-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20 }}>
           {services.map((s) => (
             <div key={s.num} className={`sv-card ${s.cls}`} style={{ padding: '40px 34px' }}>
               <div style={{ fontSize: 10, fontWeight: 800, color: 'var(--muted)', letterSpacing: '.15em', marginBottom: 20, opacity: .4, position: 'relative', zIndex: 1 }}>{s.num}</div>
