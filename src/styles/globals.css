@@ -250,7 +250,6 @@ body {
 }
 @media (max-width: 640px) {
   .hero-section { min-height: unset !important; padding: 112px 28px 80px !important; }
-  .hero-section .animate-up-1 { margin-bottom: 44px !important; }
   .hero-title { font-size: clamp(80px, 22vw, 100px) !important; }
   .hero-section .hero-title { margin-bottom: 36px !important; }
   .hero-section .hero-ctas { margin-bottom: 8px !important; }

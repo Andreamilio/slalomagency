@@ -73,11 +73,6 @@ export default function Hero() {
       <div style={{ position:'absolute', width:500, height:500, borderRadius:'50%', background:'radial-gradient(circle, rgba(37,244,238,.08) 0%, transparent 60%)', top:'30%', right:-100, pointerEvents:'none', zIndex:0, willChange:'auto' }} />
       <div style={{ position:'absolute', width:400, height:400, borderRadius:'50%', background:'radial-gradient(circle, rgba(131,58,180,.07) 0%, transparent 60%)', bottom:60, left:'30%', pointerEvents:'none', zIndex:0, willChange:'auto' }} />
 
-      <div className="animate-up-1" style={{ position:'relative', zIndex:2, display:'inline-flex', alignItems:'center', gap:8, background:'rgba(225,48,108,.07)', border:'1px solid rgba(225,48,108,.18)', borderRadius:100, padding:'6px 16px', fontSize:11.5, fontWeight:600, color:'var(--ig-pink)', letterSpacing:'.09em', textTransform:'uppercase', marginBottom:36 }}>
-        <span className="eyebrow-dot" style={{ width:6, height:6, background:'var(--ig-pink)', borderRadius:'50%', display:'inline-block' }} />
-        Talent &amp; Creative Agency
-      </div>
-
       <h1 className="animate-up-2 hero-title" style={{ position:'relative', zIndex:2, fontFamily:'Figtree, sans-serif', fontWeight:900, fontSize:'clamp(72px, 11vw, 130px)', lineHeight:.93, letterSpacing:'-.04em', marginBottom:28, color:'var(--dark-text)' }}>
         <span className="hero-title-l1">Find your</span>
         <span className="hero-title-l2 hero-way-wrap" style={{ display:'inline-block', fontFamily:'Figtree, sans-serif', fontWeight:900, fontSize:'1.34em', lineHeight:.8 }}>
