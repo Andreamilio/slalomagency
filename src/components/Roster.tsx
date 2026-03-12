@@ -23,7 +23,6 @@ export default function Roster() {
     <section id="roster" className="flow-detail" style={{ padding: '130px 24px', position: 'relative', overflow: 'hidden', zIndex: 2, isolation: 'isolate' }}>
       {/* flow-right decorative elements */}
       <div className="flow-blob" style={{ right: -285, top: '12%' }} />
-      <div className="flow-dot" style={{ right: 118, top: '22%' }} />
 
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(ellipse at 50% 0%, rgba(225,48,108,.03) 0%, transparent 60%)' }} />
       <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }}>

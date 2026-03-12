@@ -21,7 +21,7 @@ export default function Services() {
               Scegli la tua traiettoria
             </h2>
             <p style={{ fontSize: 15, color: '#fff', marginTop: 12, fontWeight: 400, lineHeight: 1.5 }}>
-              Uno slalom tra strategia, creatività e creator.
+              Slalom tra strategia, creatività e creator.
             </p>
           </div>
         </div>
