@@ -1,5 +1,5 @@
 const services = [
-  { num: '01', icon: '\u{1F3AC}', name: 'Content Creation', desc: "Contenuti che catturano l'attenzione e costruiscono community autentiche attorno al tuo brand.", tag: 'Video & Photo', cls: 'sv-card-1' },
+  { num: '01', icon: '\u{1F3AC}', name: 'Content Creation', desc: "Contenuti che fermano lo scroll e costruiscono community vere attorno al tuo brand.", tag: 'Video & Photo', cls: 'sv-card-1' },
   { num: '02', icon: '\u2726', name: 'Talent Management', desc: 'Seguiamo ogni aspetto della carriera: contratti, brand deal, crescita strategica a 360\u00B0.', tag: '360\u00B0 Care', cls: 'sv-card-2' },
   { num: '03', icon: '\u{1F4E1}', name: 'Strategia Social', desc: 'Analisi, contenuto e timing preciso per massimizzare reach e engagement su ogni piattaforma.', tag: 'Data Driven', cls: 'sv-card-3' },
   { num: '04', icon: '\u{1F525}', name: 'Influencer Marketing', desc: 'Colleghiamo brand con i creator giusti. Campagne che risuonano da connessioni reali.', tag: 'Brand Fit', cls: 'sv-card-4' },

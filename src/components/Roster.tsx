@@ -30,7 +30,7 @@ export default function Roster() {
         <div className="reveal" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 52, flexWrap: 'wrap', gap: 20, position: 'relative', zIndex: 1 }}>
           <div>
             <h2 style={{ fontFamily: 'Figtree, sans-serif', fontWeight: 900, fontSize: 'clamp(34px,4.5vw,58px)', letterSpacing: '-.03em', lineHeight: 1.05 }}>
-              Fai <span style={{ background: 'linear-gradient(135deg, var(--ig-purple), var(--ig-pink), var(--ig-orange))', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>slalom</span>,<br />tra i creator
+              Fai <span style={{ background: 'linear-gradient(135deg, var(--ig-purple), var(--ig-pink), var(--ig-orange))', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', textTransform: 'uppercase' }}>slalom</span><br />tra i creator
             </h2>
           </div>
           <a href="#" className="link-arr" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: 'Figtree, sans-serif', fontWeight: 700, fontSize: 12.5, color: 'var(--ig-pink)', textDecoration: 'none', letterSpacing: '.05em', textTransform: 'uppercase' }}>
